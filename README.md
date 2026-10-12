@@ -28,15 +28,11 @@ React UI → JWT → Spring Security → Controller → Service → Repository �
 
 8 tables: users, patients, departments, doctors, appointments, prescriptions, bills, payments.
 
-- \`users → patients\`, \`users → doctors\` — one-to-one
-- \`departments → doctors\`, \`patients/doctors → appointments\` — one-to-many
-- \`appointments → prescriptions\`, \`appointments → bills\` — one-to-one
-- \`bills → payments\` — one-to-many
+- users → patients, users → doctors — one-to-one
+- departments → doctors, patients/doctors → appointments — one-to-many
+- appointments → prescriptions, appointments → bills — one-to-one
+- bills → payments — one-to-many
 
-A unique constraint on \`(doctor_id, appt_date, appt_time)\` prevents double booking at the database level.
+A unique constraint on (doctor_id, appt_date, appt_time) prevents double booking at the database level.
 
 
-
-## Author
-
-Sudireddy Nithya Priya · 24EG105P45 · CSE-P
