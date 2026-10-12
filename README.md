@@ -20,13 +20,13 @@ React.js · Spring Boot · MySQL · JWT Security
 
 ## Architecture
 
-\`\`\`
+
 React UI → JWT → Spring Security → Controller → Service → Repository → MySQL
-\`\`\`
+
 
 ## Database
 
-8 tables: \`users\`, \`patients\`, \`departments\`, \`doctors\`, \`appointments\`, \`prescriptions\`, \`bills\`, \`payments\`.
+8 tables: users, patients, departments, doctors, appointments, prescriptions, bills, payments.
 
 - \`users → patients\`, \`users → doctors\` — one-to-one
 - \`departments → doctors\`, \`patients/doctors → appointments\` — one-to-many
